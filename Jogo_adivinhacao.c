@@ -17,7 +17,7 @@ int main(){
     for( i=1 ; i<=tentativas && numerosecreto!=numero ; i++ ){
         printf("\nEssa eh sua tentativa numero %d\nDigite seu numero: ", i);
         scanf("%d", &numero);
-        if(i==tentativas)
+        if(i==tentativas && numero!=numerosecreto)
             printf("\nSuas tentativas acabaram! PERDEU! O numero secreto era %d", numerosecreto);
         else if(numero<numerosecreto)
             printf("O numero secreto eh maior, tente novamente: \n");
